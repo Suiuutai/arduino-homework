@@ -34,7 +34,6 @@ void loop() {
 
     while (millis() - start < duration && armed) {
 
-      // Check Arm button during alarm
       if (digitalRead(armBtn) == LOW) {
         armed = false;
         break;
